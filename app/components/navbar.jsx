@@ -20,7 +20,7 @@ const NAV_ITEMS = {
 
 export default function Navbar() {
 	return (
-		<header className="bg-[#282828e5] border-b md:border-none border-b-[#ffffff13] backdrop-blur-md z-30 fixed w-full left-0 right-0">
+		<header className="bg-[#191919e5] border-b md:border-none border-b-[#ffffff13] backdrop-blur-md z-30 fixed w-full left-0 right-0">
 			<div className="container px-6 py-6 flex flex-row items-center justify-between mx-auto">
 				<a href="/" className="font-semibold tracking-tight">
 					Tahiel Pedevilla

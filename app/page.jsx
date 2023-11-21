@@ -15,7 +15,7 @@ export default function Page() {
 		<main>
 			<section
 				id="home"
-				className="flex flex-col justify-center items-center min-h-screen h-screen relative"
+				className="flex flex-col justify-center items-center min-h-[100svh] h-[100svh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6">
 					<h1 className="max-w-[18ch] font-bold text-[2em] lg:text-[4em] tracking-tight leading-tight text-center">
@@ -27,7 +27,7 @@ export default function Page() {
 					</h2>
 					<a
 						href="/#contact"
-						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-[#282828] rounded-[6px] hover:scale-105 ease-out duration-300"
+						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-[#191919] rounded-[6px] hover:scale-105 ease-out duration-300"
 					>
 						Get in touch
 					</a>

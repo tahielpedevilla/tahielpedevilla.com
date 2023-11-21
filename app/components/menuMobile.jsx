@@ -33,7 +33,7 @@ export default function MenuMobile({ navItems }) {
 				/>
 			</button>
 			{isMobileMenuOpen && (
-				<nav className="flex max-w-[100vw] bg-[#282828e5] fixed left-0 backdrop-blur-md mx-auto container px-6 py-6 right-0 bottom-0 top-[81px] z-50 flex-col h-[calc(100vh-81px)] font-medium md:hidden gap-6">
+				<nav className="flex max-w-[100vw] bg-[#191919e5] fixed left-0 backdrop-blur-md mx-auto container px-6 py-6 right-0 bottom-0 top-[81px] z-50 flex-col h-[calc(100vh-81px)] font-medium md:hidden gap-6">
 					<Suspense fallback={null}>
 						{Object.entries(navItems).map(([path, { name }]) => {
 							return (
