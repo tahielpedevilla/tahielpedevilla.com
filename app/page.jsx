@@ -118,7 +118,7 @@ export default function Page() {
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 							April 2021 – Present
 						</p>
-						<p className="mt-2 leading-normal text-center text-[#f1f1f1]">
+						<p className="mt-2 leading-normal text-center text-sm lg:text-base text-[#f1f1f1]">
 							As a freelance Web Developer, I provide customized digital solutions to both national
 							and international clients. I take pride in helping my clients enhance their online
 							presence and connect with their target audience by creating visually appealing and
@@ -184,7 +184,7 @@ export default function Page() {
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 							September – October 2022
 						</p>
-						<p className="mt-2 leading-normal text-center text-[#f1f1f1]">
+						<p className="mt-2 leading-normal text-center text-sm lg:text-base text-[#f1f1f1]">
 							I contributed to maintaining an international eCommerce platform, resolving bugs and
 							implementing new features.
 						</p>
@@ -238,7 +238,7 @@ export default function Page() {
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 							January – September 2022
 						</p>
-						<p className="mt-2 leading-normal text-center text-[#f1f1f1]">
+						<p className="mt-2 leading-normal text-center text-sm lg:text-base text-[#f1f1f1]">
 							I collaborated with other developers and worked closely with the UX team on the
 							redesign of several websites.
 						</p>
@@ -287,7 +287,7 @@ export default function Page() {
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 							November 2021 – May 2022
 						</p>
-						<p className="mt-2 leading-normal text-center text-[#f1f1f1]">
+						<p className="mt-2 leading-normal text-center text-sm lg:text-base text-[#f1f1f1]">
 							Collaborating alongside the CTO, I developed a range of websites for companies and
 							businesses across diverse sectors.
 						</p>
