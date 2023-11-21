@@ -19,6 +19,13 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				{children}
 				<Footer />
+				<svg className="fixed top-0 left-0 z-50 w-full h-screen opacity-20 pointer-events-none transform translate-y-0 filter contrast-120 brightness-120">
+					<filter id="noise">
+						<feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="4"></feTurbulence>
+						<feColorMatrix type="saturate" values="0"></feColorMatrix>
+					</filter>
+					<rect width="100%" height="100%" filter="url(#noise)"></rect>
+				</svg>
 			</body>
 		</html>
 	)
