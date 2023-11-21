@@ -38,7 +38,7 @@ export default function Page() {
 				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight leading-none">Work</h2>
 				<div className="flex flex-col gap-6 mt-6">
 					<a
-						href="#"
+						href="https://ioio.mx/"
 						className="bg-[url('/ioio.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
@@ -51,7 +51,8 @@ export default function Page() {
 						</header>
 					</a>
 					<a
-						href="#"
+						href="https://mainlabs.academy/"
+						target="_blank" rel="noopener noreferrer"
 						className="bg-[url('/mainlabs-academy.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
@@ -64,8 +65,9 @@ export default function Page() {
 						</header>
 					</a>
 					<a
-						href="#"
-						className="bg-[url('/work.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+						href="https://latteagency.com/"
+						target="_blank" rel="noopener noreferrer"
+						className="bg-[url('/latte.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
 							<h3 className="font-bold text-2xl tracking-tight">Latte Agency</h3>
