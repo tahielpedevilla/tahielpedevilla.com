@@ -10,17 +10,6 @@ export const metadata = {
 	title: "Tahiel Pedevilla",
 	description:
 		"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development.",
-	openGraph: {
-		title: "Tahiel Pedevilla",
-		description: "Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development.",
-		image: "https://www.tahielpedevilla.com/og.png",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Tahiel Pedevilla",
-		description: "Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development.",
-		image: "https://www.tahielpedevilla.com/og.png",
-	},
 }
 
 export default function RootLayout({ children }) {
