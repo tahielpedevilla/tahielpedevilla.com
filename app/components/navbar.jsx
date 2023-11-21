@@ -20,7 +20,7 @@ const navItems = {
 
 export default function Navbar() {
 	return (
-		<header className="flex flex-row bg-[#282828e5] backdrop-blur-md z-30 items-center justify-between fixed mx-auto container px-6 py-6 w-full left-0 right-0">
+		<header className="flex flex-row bg-[#282828e5] border-b border-[#ffffff13] backdrop-blur-md z-30 items-center justify-between fixed mx-auto container px-6 py-6 w-full left-0 right-0">
 			<Link href="/" className="font-semibold tracking-tight">
 				Tahiel Pedevilla
 			</Link>
@@ -62,7 +62,7 @@ function MenuMobile() {
 				<div className={`${ isOpenMenuMobile ? "-rotate-45 scale-110" : "rotate-0 translate-y-[3.5px]" } w-[14px] h-[1.5px] bg-[#d3d3d3] absolute transition-transform duration-[.25s] ease-out`}/>
 			</button>
 			{isOpenMenuMobile && (
-				<nav className="flex max-w-[100vw] bg-[#282828e5] fixed left-0 backdrop-blur-md mx-auto container px-6 py-6 right-0 bottom-0 top-20 z-50 flex-col h-[calc(100vh-80px)] font-medium md:hidden gap-6">
+				<nav className="flex max-w-[100vw] bg-[#282828e5] fixed left-0 backdrop-blur-md mx-auto container px-6 py-6 right-0 bottom-0 top-[81px] z-50 flex-col h-[calc(100vh-81px)] font-medium md:hidden gap-6">
 					<Suspense fallback={null}>
 						{Object.entries(navItems).map(([path, { name }]) => {
 							return <NavItemMobile key={path} path={path} name={name} />
