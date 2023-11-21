@@ -6,3 +6,27 @@ body {
   color: #fff;
   background: #282828;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.asterisk {
+  animation: turn 8s linear forwards infinite;
+}
+
+@keyframes turn {
+  to {
+    transform: rotate(1turn)
+  }
+}

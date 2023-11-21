@@ -1,19 +1,6 @@
-import Link from "next/link"
+import AvailavilityMarquee from "./components/availabilityMarquee"
 
 export default function Page() {
-	function getArgentinianTime() {
-		const argentinianTime = new Date().toLocaleTimeString("es-AR", {
-			hour: "2-digit",
-			minute: "2-digit",
-			hour12: true,
-			timeZone: "America/Argentina/Buenos_Aires",
-		})
-
-		return argentinianTime
-	}
-
-	const argentinianTime = getArgentinianTime()
-
 	function calculateAge() {
 		const birthYear = 2000
 		const currentYear = new Date().getFullYear()
@@ -28,13 +15,13 @@ export default function Page() {
 		<main>
 			<section
 				id="home"
-				className="flex flex-col justify-center items-center min-h-screen h-screen"
+				className="flex flex-col justify-center items-center min-h-screen h-screen relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6">
-					<h1 className="max-w-[18ch] font-bold text-[1.5em] lg:text-[3em] tracking-tight leading-tight text-center">
+					<h1 className="max-w-[18ch] font-bold text-[2em] lg:text-[4em] tracking-tight leading-tight text-center">
 						Web Developer Freelance Based in Buenos Aires
 					</h1>
-					<h2 className="font-medium max-w-md md:text-lg mt-4 tracking-tight leading-tight text-center">
+					<h2 className="font-medium max-w-lg md:text-xl mt-4 tracking-tight leading-tight text-center">
 						Developing web solutions for brands that align with strategic visions and purpose-driven
 						products.
 					</h2>
@@ -45,27 +32,31 @@ export default function Page() {
 						Get in touch
 					</a>
 				</div>
-				<div className="flex text-sm lg:text-lg flex-row justify-between items-end mx-auto container px-6 py-6 absolute bottom-0 w-full">
-					<div className="flex gap-2 items-center">
-						<span className="h-2 w-2 bg-[#6db86b] rounded-full block" />
-						<p>Available December 2023</p>
-					</div>
-					<div className="flex gap-1 flex-col items-end lg:inline">
-						<p className="inline leading-tight tracking-tighter">Buenos Aires</p>
-						<p className="inline uppercase leading-tight tracking-tighter"> {argentinianTime}</p>
-					</div>
-				</div>
+				<AvailavilityMarquee />
 			</section>
 			<section id="work" className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20">
 				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight leading-none">Work</h2>
 				<div className="flex flex-col gap-6 mt-6">
 					<a
 						href="#"
-						className="bg-[url('/work.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+						className="bg-[url('/ioio.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
-						<header className="flex flex-row bg-[#ffffff] text-[#292929] rounded-[6px] p-4 max-w-fit">
+						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
 							<h3 className="font-bold text-2xl tracking-tight">IOIO</h3>
-							<div className="flex flex-row items-center ml-6 gap-2">
+							<div className="flex flex-row items-center sm:ml-6 gap-2">
+								<p className="text-sm lg:text-lg">Latte Agency</p>
+								<span>/</span>
+								<p className="text-sm lg:text-lg">May 2022</p>
+							</div>
+						</header>
+					</a>
+					<a
+						href="#"
+						className="bg-[url('/mainlabs-academy.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+					>
+						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
+							<h3 className="font-bold text-2xl tracking-tight">Mainlabs Academy</h3>
+							<div className="flex flex-row items-center sm:ml-6 gap-2">
 								<p className="text-sm lg:text-lg">Freelance</p>
 								<span>/</span>
 								<p className="text-sm lg:text-lg">May 2022</p>
@@ -76,25 +67,12 @@ export default function Page() {
 						href="#"
 						className="bg-[url('/work.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
-						<header className="flex flex-row bg-[#ffffff] text-[#292929] rounded-[6px] p-4 max-w-fit">
-							<h3 className="font-bold text-2xl tracking-tight">IOIO</h3>
-							<div className="flex flex-row items-center ml-6 gap-2">
-								<p className="text-sm lg:text-lg">Freelance</p>
+						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
+							<h3 className="font-bold text-2xl tracking-tight">Latte Agency</h3>
+							<div className="flex flex-row items-center sm:ml-6 gap-2">
+								<p className="text-sm lg:text-lg">Latte Agency</p>
 								<span>/</span>
-								<p className="text-sm lg:text-lg">May 2022</p>
-							</div>
-						</header>
-					</a>
-					<a
-						href="#"
-						className="bg-[url('/work.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
-					>
-						<header className="flex flex-row bg-[#ffffff] text-[#292929] rounded-[6px] p-4 max-w-fit">
-							<h3 className="font-bold text-2xl tracking-tight">IOIO</h3>
-							<div className="flex flex-row items-center ml-6 gap-2">
-								<p className="text-sm lg:text-lg">Freelance</p>
-								<span>/</span>
-								<p className="text-sm lg:text-lg">May 2022</p>
+								<p className="text-sm lg:text-lg">August 2022</p>
 							</div>
 						</header>
 					</a>
@@ -120,34 +98,23 @@ export default function Page() {
 				</div>
 			</section>
 			<section id="experience" className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20">
-				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight leading-none">Experience</h2>
+				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight leading-none">
+					Experience
+				</h2>
 				<ol className="flex flex-col gap-12 py-12 lg:py-6 max-w-prose mx-auto">
 					<li className="flex flex-col">
 						<h3
 							className="text-center text-xl tracking-tight"
-							aria-label="Frontend Developer at Houston"
+							aria-label="Web Developer Freelance"
 						>
-							<span className="inline-block">Frontend Developer ·</span>
-							<a href="#" className="group">
+							<span className="inline-block">Web Developer ·</span>
+							<span>
 								{" "}
 								Freelance
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-									className="inline-block h-5 w-5 mb-0.5 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-									aria-hidden="true"
-								>
-									<path
-										fillRule="evenodd"
-										d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-										clipRule="evenodd"
-									></path>
-								</svg>
-							</a>
+							</span>
 						</h3>
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
-							April – August 2021
+							April 2021 – Present
 						</p>
 						<p className="mt-2 text-sm leading-normal text-center text-[#f1f1f1]">
 							As a freelance Web Developer, I provide customized digital solutions to both national
@@ -191,12 +158,12 @@ export default function Page() {
 					<li className="flex flex-col">
 						<h3
 							className="text-center text-xl tracking-tight"
-							aria-label="Frontend Developer at Houston"
+							aria-label="Full Stack Developer at made2"
 						>
-							<span className="inline-block">Frontend Developer ·</span>
-							<a href="#" className="group">
+							<span className="inline-block">Full Stack Developer ·</span>
+							<a href="https://made2.co/" target="_blank" rel="noopener noreferrer" className="group">
 								{" "}
-								Freelance
+								made2
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
@@ -208,23 +175,75 @@ export default function Page() {
 										fillRule="evenodd"
 										d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
 										clipRule="evenodd"
-									></path>
+									/>
 								</svg>
 							</a>
 						</h3>
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
-							April – August 2021
+							September – October 2022
 						</p>
 						<p className="mt-2 text-sm leading-normal text-center text-[#f1f1f1]">
-							As a freelance Web Developer, I provide customized digital solutions to both national
-							and international clients. I take pride in helping my clients enhance their online
-							presence and connect with their target audience by creating visually appealing and
-							high-performing websites.
+							I contributed to maintaining an international eCommerce platform, resolving bugs and
+							implementing new features.
 						</p>
 						<ul className="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
 							<li className="mr-1.5 mt-2">
 								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									React
+									Vue
+								</div>
+							</li>
+							<li className="mr-1.5 mt-2">
+								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
+									Nuxt
+								</div>
+							</li>
+							<li className="mr-1.5 mt-2">
+								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
+									JavaScript
+								</div>
+							</li>
+							<li className="mr-1.5 mt-2">
+								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
+									CSS
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li className="flex flex-col">
+						<h3
+							className="text-center text-xl tracking-tight"
+							aria-label="Frontend Developer at Bravo"
+						>
+							<span className="inline-block">Frontend Developer ·</span>
+							<a href="https://www.linkedin.com/company/bravostudiocom/" target="_blank" rel="noopener noreferrer" className="group">
+								{" "}
+								Bravo
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									className="inline-block h-5 w-5 mb-0.5 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+									aria-hidden="true"
+								>
+									<path
+										fillRule="evenodd"
+										d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+										clipRule="evenodd"
+									/>
+								</svg>
+							</a>
+						</h3>
+						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
+							January – September 2022
+						</p>
+						<p className="mt-2 text-sm leading-normal text-center text-[#f1f1f1]">
+							I collaborated with other developers and worked closely with the UX team on the
+							redesign of several websites.
+						</p>
+						<ul className="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
+							<li className="mr-1.5 mt-2">
+								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
+									HTML
 								</div>
 							</li>
 							<li className="mr-1.5 mt-2">
@@ -235,21 +254,6 @@ export default function Page() {
 							<li className="mr-1.5 mt-2">
 								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
 									JavaScript
-								</div>
-							</li>
-							<li className="mr-1.5 mt-2">
-								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									PHP
-								</div>
-							</li>
-							<li className="mr-1.5 mt-2">
-								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									WordPress
-								</div>
-							</li>
-							<li className="mr-1.5 mt-2">
-								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									Webflow
 								</div>
 							</li>
 						</ul>
@@ -260,9 +264,9 @@ export default function Page() {
 							aria-label="Frontend Developer at Houston"
 						>
 							<span className="inline-block">Frontend Developer ·</span>
-							<a href="#" className="group">
+							<a href="https://houston.com.ar/" target="_blank" rel="noopener noreferrer" className="group">
 								{" "}
-								Freelance
+								Houston
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
@@ -274,23 +278,21 @@ export default function Page() {
 										fillRule="evenodd"
 										d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
 										clipRule="evenodd"
-									></path>
+									/>
 								</svg>
 							</a>
 						</h3>
 						<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
-							April – August 2021
+							November 2021 – May 2022
 						</p>
 						<p className="mt-2 text-sm leading-normal text-center text-[#f1f1f1]">
-							As a freelance Web Developer, I provide customized digital solutions to both national
-							and international clients. I take pride in helping my clients enhance their online
-							presence and connect with their target audience by creating visually appealing and
-							high-performing websites.
+							Collaborating alongside the CTO, I developed a range of websites for companies and
+							businesses across diverse sectors.
 						</p>
 						<ul className="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
 							<li className="mr-1.5 mt-2">
 								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									React
+									HTML
 								</div>
 							</li>
 							<li className="mr-1.5 mt-2">
@@ -310,12 +312,7 @@ export default function Page() {
 							</li>
 							<li className="mr-1.5 mt-2">
 								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									WordPress
-								</div>
-							</li>
-							<li className="mr-1.5 mt-2">
-								<div className="flex items-center rounded-[6px] px-2 py-0.5 text-xs font-medium leading-5 border">
-									Webflow
+									SQL
 								</div>
 							</li>
 						</ul>
@@ -325,7 +322,9 @@ export default function Page() {
 			<section id="contact" className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20">
 				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight">Contact</h2>
 				<div className="flex flex-col mt-6 items-center py-40 text-lg">
-					<h3 className="text-3xl lg:text-[6vw] font-bold leadin tracking-tight leading-snug">Let’s Collaborate</h3>
+					<h3 className="text-3xl lg:text-[6vw] font-bold leadin tracking-tight leading-snug">
+						Let’s Collaborate
+					</h3>
 					<a href="mailto:tahielpeed@gmail" className="group text-lg">
 						tahielpeed@gmail.com
 						<svg
@@ -339,7 +338,7 @@ export default function Page() {
 								fillRule="evenodd"
 								d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
 								clipRule="evenodd"
-							></path>
+							/>
 						</svg>
 					</a>
 				</div>
