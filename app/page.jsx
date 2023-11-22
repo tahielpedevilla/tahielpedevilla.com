@@ -39,7 +39,7 @@ export default function Page() {
 				<div className="flex flex-col gap-6 mt-6">
 					<a
 						href="https://ioio.mx/"
-						className="bg-[url('/ioio.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+						className="bg-[url('/ioio-mobile.png')] lg:bg-[url('/ioio.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
 							<h3 className="font-bold text-2xl tracking-tight">IOIO</h3>
@@ -53,7 +53,7 @@ export default function Page() {
 					<a
 						href="https://mainlabs.academy/"
 						target="_blank" rel="noopener noreferrer"
-						className="bg-[url('/mainlabs-academy.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+						className="bg-[url('/mainlabs-academy-mobile.png')] lg:bg-[url('/mainlabs-academy.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
 							<h3 className="font-bold text-2xl tracking-tight">Mainlabs Academy</h3>
@@ -67,7 +67,7 @@ export default function Page() {
 					<a
 						href="https://latteagency.com/"
 						target="_blank" rel="noopener noreferrer"
-						className="bg-[url('/latte.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
+						className="bg-[url('/latte-mobile.png')] lg:bg-[url('/latte.png')] bg-cover bg-center bg-no-repeat w-full rounded-[1rem] h-[300px] lg:h-[500px] p-4 lg:p-6"
 					>
 						<header className="flex flex-col sm:flex-row w-full bg-[#ffffff] text-[#292929] rounded-[6px] p-4 sm:max-w-fit">
 							<h3 className="font-bold text-2xl tracking-tight">Latte Agency</h3>
