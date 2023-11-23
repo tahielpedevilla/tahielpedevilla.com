@@ -90,7 +90,7 @@ export default function Page() {
 				className="flex flex-col justify-center items-center min-h-[100svh] h-[100svh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6">
-					<h1 className="max-w-[18ch] font-bold text-[2em] lg:text-[4em] tracking-tight leading-tight text-center">
+					<h1 className="max-w-[18ch] font-bold text-[6.66vw] lg:text-[4em] tracking-tight leading-tight text-center">
 						Web Developer Freelance Based in Buenos Aires
 					</h1>
 					<h2 className="font-medium max-w-lg md:text-xl mt-4 tracking-tight leading-tight text-center">
@@ -110,7 +110,7 @@ export default function Page() {
 				<h2 className="font-medium text-2xl lg:text-[2.33vw] tracking-tight leading-none">Work</h2>
 				<div className="flex flex-col gap-6 mt-6">
 					{projects.map((project) => (
-						<Project project={project} />
+						<Project key={project.title} project={project} />
 					))}
 				</div>
 			</section>
@@ -139,7 +139,7 @@ export default function Page() {
 				</h2>
 				<ol className="flex flex-col gap-12 py-12 lg:py-6 max-w-prose mx-auto">
 					{experiences.map((experience) => (
-						<Experience experience={experience} />
+						<Experience key={experience.title} experience={experience} />
 					))}
 				</ol>
 			</section>

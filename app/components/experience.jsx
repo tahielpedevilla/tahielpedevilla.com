@@ -5,7 +5,7 @@ export default function Experience({ experience }) {
 	return (
 		<li className="flex flex-col">
 			<h3 className="text-center text-xl tracking-tight" aria-label={`${title} at ${company}`}>
-				<span className="inline-block">{title} ·</span>
+				<p className="inline-block">{title} ·</p>
 				{companyUrl ? (
 					<a href={companyUrl} target="_blank" rel="noopener noreferrer" className="group">
 						{" "}
@@ -31,7 +31,7 @@ export default function Experience({ experience }) {
 			<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 				{startDate} – {endDate}
 			</p>
-			<p className="mt-2 leading-normal text-center text-sm lg:text-base text-[#f1f1f1]">
+			<p className="mt-2 leading-normal text-center text-sm lg:text-base">
 				{description}
 			</p>
 			<ul className="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
