@@ -10,8 +10,10 @@ export default function MenuMobile({ navItems }) {
 	}
 
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			document.body.style.overflow = isMobileMenuOpen ? "hidden" : "auto"
+		if (isMobileMenuOpen) {
+			document.body.style.overflow = "hidden"
+		} else {
+			document.body.style.overflow = "auto"
 		}
 	}, [isMobileMenuOpen])
 

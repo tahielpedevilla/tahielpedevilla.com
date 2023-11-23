@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 
-const SOCIAL_LINKS = {
+const socialLinks = {
 	"https://www.linkedin.com/in/tahiel-pedevilla/": {
 		name: "LinkedIn",
 	},
@@ -20,7 +20,7 @@ export default function Footer() {
 			<div className="container mx-auto px-6 py-6 flex flex-col gap-4 lg:flex-row items-center justify-between">
 				<nav className="flex flex-row items-center font-semibold relative gap-6">
 					<Suspense fallback={null}>
-						{Object.entries(SOCIAL_LINKS).map(([path, { name }]) => {
+						{Object.entries(socialLinks).map(([path, { name }]) => {
 							return <FooterItem key={path} path={path} name={name} />
 						})}
 					</Suspense>

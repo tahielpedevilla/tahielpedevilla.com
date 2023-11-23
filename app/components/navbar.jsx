@@ -3,7 +3,7 @@
 import { Suspense } from "react"
 import MenuMobile from "./menuMobile"
 
-const NAV_ITEMS = {
+const navItems = {
 	"/#work": {
 		name: "Work",
 	},
@@ -27,12 +27,12 @@ export default function Navbar() {
 				</a>
 				<nav className="hidden font-medium flex-row space-x-0 md:flex gap-6">
 					<Suspense fallback={null}>
-						{Object.entries(NAV_ITEMS).map(([path, { name }]) => {
+						{Object.entries(navItems).map(([path, { name }]) => {
 							return <NavItem key={path} path={path} name={name} />
 						})}
 					</Suspense>
 				</nav>
-				<MenuMobile navItems={NAV_ITEMS} />
+				<MenuMobile navItems={navItems} />
 			</div>
 		</header>
 	)
