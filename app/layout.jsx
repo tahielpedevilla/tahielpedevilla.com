@@ -16,7 +16,8 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Tahiel Pedevilla",
-		description: "Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
+		description:
+			"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
 		creator: "@tahielpedevilla",
 		images: ["https://tahielpedevilla.com/og-image.png"],
 	},
