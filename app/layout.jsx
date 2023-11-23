@@ -9,7 +9,17 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 export const metadata = {
 	title: "Tahiel Pedevilla",
 	description:
-		"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development.",
+		"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
+	openGraph: {
+		images: "/og-image.png",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Tahiel Pedevilla",
+		description: "Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
+		creator: "@tahielpedevilla",
+		images: ["https://tahielpedevilla.com/og-image.png"],
+	},
 }
 
 export default function RootLayout({ children }) {
