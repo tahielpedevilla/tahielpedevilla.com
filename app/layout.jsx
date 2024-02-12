@@ -1,10 +1,10 @@
-import { Space_Grotesk } from "next/font/google"
-import "./globals.css"
+import { Space_Grotesk } from "next/font/google";
+import "./globals.css";
 
-import Navbar from "./components/navbar"
-import Footer from "./components/footer"
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Tahiel Pedevilla",
@@ -21,7 +21,7 @@ export const metadata = {
 		creator: "@tahielpedevilla",
 		images: ["https://tahielpedevilla.com/og-image.png"],
 	},
-}
+};
 
 export default function RootLayout({ children }) {
 	return (
@@ -32,5 +32,5 @@ export default function RootLayout({ children }) {
 				<Footer />
 			</body>
 		</html>
-	)
+	);
 }

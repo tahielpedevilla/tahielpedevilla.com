@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+import { Suspense } from "react";
 
 const socialLinks = {
 	"https://www.linkedin.com/in/tahiel-pedevilla/": {
@@ -10,10 +10,10 @@ const socialLinks = {
 	"https://twitter.com/tahielpedevilla": {
 		name: "X",
 	},
-}
+};
 
 export default function Footer() {
-	const year = new Date().getFullYear()
+	const year = new Date().getFullYear();
 
 	return (
 		<footer className="border-t border-t-[#ffffff13]">
@@ -21,7 +21,7 @@ export default function Footer() {
 				<nav className="flex flex-row items-center font-semibold relative gap-6">
 					<Suspense fallback={null}>
 						{Object.entries(socialLinks).map(([path, { name }]) => {
-							return <FooterItem key={path} path={path} name={name} />
+							return <FooterItem key={path} path={path} name={name} />;
 						})}
 					</Suspense>
 				</nav>
@@ -31,7 +31,7 @@ export default function Footer() {
 				</div>
 			</div>
 		</footer>
-	)
+	);
 }
 
 function FooterItem({ path, name }) {
@@ -39,5 +39,5 @@ function FooterItem({ path, name }) {
 		<a href={path} target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
 			{name}
 		</a>
-	)
+	);
 }

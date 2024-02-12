@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Suspense } from "react"
-import MenuMobile from "./menuMobile"
+import { Suspense } from "react";
+import MenuMobile from "./menuMobile";
 
 const navItems = {
 	"/#work": {
@@ -16,7 +16,7 @@ const navItems = {
 	"/#contact": {
 		name: "Contact",
 	},
-}
+};
 
 export default function Navbar() {
 	return (
@@ -28,14 +28,14 @@ export default function Navbar() {
 				<nav className="hidden font-medium flex-row space-x-0 md:flex gap-6">
 					<Suspense fallback={null}>
 						{Object.entries(navItems).map(([path, { name }]) => {
-							return <NavItem key={path} path={path} name={name} />
+							return <NavItem key={path} path={path} name={name} />;
 						})}
 					</Suspense>
 				</nav>
 				<MenuMobile navItems={navItems} />
 			</div>
 		</header>
-	)
+	);
 }
 
 function NavItem({ path, name }) {
@@ -43,5 +43,5 @@ function NavItem({ path, name }) {
 		<a href={path} className="hover:opacity-80">
 			{name}
 		</a>
-	)
+	);
 }

@@ -1,11 +1,11 @@
-import AvailavilityMarquee from "./components/availabilityMarquee"
-import Experience from "./components/experience"
-import Project from "./components/project"
+import AvailavilityMarquee from "./components/availabilityMarquee";
+import Experience from "./components/experience";
+import Project from "./components/project";
 
 const projects = [
 	{
 		title: "IOIO",
-		link: "https://ioio-webapp-dev-edsrh2rawa-uc.a.run.app/",
+		link: "https://ioio.mx/",
 		mobileImage: "/ioio-mobile.png",
 		desktopImage: "/ioio.png",
 		client: "Latte Agency",
@@ -27,7 +27,7 @@ const projects = [
 		client: "Latte Agency",
 		date: "August 2022",
 	},
-]
+];
 
 const experiences = [
 	{
@@ -70,19 +70,20 @@ const experiences = [
 		description:
 			"Collaborating alongside the CTO, I developed a range of websites for companies and businesses across diverse sectors.",
 	},
-]
+];
 
 export default function Page() {
 	function calculateAge() {
-		const birthYear = 2000
-		const currentYear = new Date().getFullYear()
+		const birthYear = 2000;
+		const currentYear = new Date().getFullYear();
 		const birthdayPassed =
-			new Date().getMonth() > 6 || (new Date().getMonth() === 6 && new Date().getDate() >= 8)
+			new Date().getMonth() > 6 || (new Date().getMonth() === 6 && new Date().getDate() >= 8);
 
-		return currentYear - birthYear - (birthdayPassed ? 0 : 1)
+		return currentYear - birthYear - (birthdayPassed ? 0 : 1);
 	}
 
-	const myAge = calculateAge()
+	const myAge = calculateAge();
+
 	return (
 		<main>
 			<section
@@ -168,5 +169,5 @@ export default function Page() {
 				</div>
 			</section>
 		</main>
-	)
+	);
 }

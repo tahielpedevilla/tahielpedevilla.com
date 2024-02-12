@@ -1,7 +1,7 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Project({ project }) {
-	const { title, link, mobileImage, desktopImage, client, date } = project
+	const { title, link, mobileImage, desktopImage, client, date } = project;
 
 	return (
 		<a
@@ -30,5 +30,5 @@ export default function Project({ project }) {
 				</div>
 			</header>
 		</a>
-	)
+	);
 }

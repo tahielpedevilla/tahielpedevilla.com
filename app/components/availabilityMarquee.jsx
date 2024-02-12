@@ -1,5 +1,5 @@
 export default function AvailavilityMarquee() {
-	const availavilityDate = "DECEMBER 2023"
+	const availavilityDate = "MARCH 2024";
 
 	return (
 		<div className="absolute bottom-6 z-20 flex items-center overflow-x-hidden max-w-[100%]">
@@ -164,5 +164,5 @@ export default function AvailavilityMarquee() {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }

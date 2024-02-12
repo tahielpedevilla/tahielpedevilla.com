@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { Suspense, useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react";
 
 export default function MenuMobile({ navItems }) {
-	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	function toggleMenuMobile() {
-		setIsMobileMenuOpen(!isMobileMenuOpen)
+		setIsMobileMenuOpen(!isMobileMenuOpen);
 	}
 
 	useEffect(() => {
 		if (isMobileMenuOpen) {
-			document.body.style.overflow = "hidden"
+			document.body.style.overflow = "hidden";
 		} else {
-			document.body.style.overflow = "auto"
+			document.body.style.overflow = "auto";
 		}
-	}, [isMobileMenuOpen])
+	}, [isMobileMenuOpen]);
 
 	return (
 		<>
@@ -45,13 +45,13 @@ export default function MenuMobile({ navItems }) {
 									path={path}
 									name={name}
 								/>
-							)
+							);
 						})}
 					</Suspense>
 				</nav>
 			)}
 		</>
-	)
+	);
 }
 
 function NavItemMobile({ path, name, toggleMenuMobile }) {
@@ -59,5 +59,5 @@ function NavItemMobile({ path, name, toggleMenuMobile }) {
 		<a href={path} className="border-b border-[#ffffff24] py-2 text-xl" onClick={toggleMenuMobile}>
 			{name}
 		</a>
-	)
+	);
 }

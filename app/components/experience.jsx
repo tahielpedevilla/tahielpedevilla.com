@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
 export default function Experience({ experience }) {
-	const { title, company, companyUrl, startDate, endDate, description, technologies } = experience
+	const { title, company, companyUrl, startDate, endDate, description, technologies } = experience;
 	return (
 		<li className="flex flex-col">
 			<h3 className="text-center text-xl tracking-tight" aria-label={`${title} at ${company}`}>
@@ -25,15 +25,13 @@ export default function Experience({ experience }) {
 						</svg>
 					</a>
 				) : (
-					<p className="inline">{" "}{company}</p>
+					<p className="inline"> {company}</p>
 				)}
 			</h3>
 			<p className="mt-2 text-sm leading-normal text-center text-[#e7e7e7]">
 				{startDate} – {endDate}
 			</p>
-			<p className="mt-2 leading-normal text-center text-sm lg:text-base">
-				{description}
-			</p>
+			<p className="mt-2 leading-normal text-center text-sm lg:text-base">{description}</p>
 			<ul className="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
 				{technologies.map((technology) => (
 					<li key={technology} className="mr-1.5 mt-2">
@@ -44,5 +42,5 @@ export default function Experience({ experience }) {
 				))}
 			</ul>
 		</li>
-	)
+	);
 }
