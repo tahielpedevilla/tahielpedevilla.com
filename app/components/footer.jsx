@@ -16,7 +16,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="border-t border-t-[#ffffff13]">
+		<footer className="border-t border-t-[#0c0c0c13]">
 			<div className="container mx-auto px-6 py-6 flex flex-col gap-4 lg:flex-row items-center justify-between">
 				<nav className="flex flex-row items-center font-semibold relative gap-6">
 					<Suspense fallback={null}>
@@ -26,7 +26,7 @@ export default function Footer() {
 					</Suspense>
 				</nav>
 				<div className="text-[#d3d3d3] text-sm">
-					<span className="font-semibold text-sm tracking-tight">Tahiel Pedevilla</span>{" "}
+					<span className="font-semibold text-sm">Tahiel Pedevilla</span>{" "}
 					<span>&copy; {year}</span>
 				</div>
 			</div>

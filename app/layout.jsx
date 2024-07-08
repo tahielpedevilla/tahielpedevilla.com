@@ -1,10 +1,14 @@
-import { Space_Grotesk } from "next/font/google";
+import localFont from 'next/font/local'
+
 import "./globals.css";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+const montreal = localFont({
+  src: './PPNeueMontreal-Regular.otf',
+  display: 'swap',
+})
 
 export const metadata = {
 	title: "Tahiel Pedevilla",
@@ -26,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="antialiased scroll-smooth">
-			<body className={`${spaceGrotesk.className}`}>
+			<body className={`${montreal.className}`}>
 				<Navbar />
 				{children}
 				<Footer />

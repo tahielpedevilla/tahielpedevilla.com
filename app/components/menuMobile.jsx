@@ -20,7 +20,7 @@ export default function MenuMobile({ navItems }) {
 	return (
 		<>
 			<button
-				className="w-8 h-8 rounded-full border border-[#ffffff6c] flex items-center md:hidden justify-center bg-transparent relative transition-colors ease-out"
+				className="w-8 h-8 rounded-full border border-[#404040] flex items-center md:hidden justify-center bg-transparent relative transition-colors ease-out"
 				onClick={toggleMenuMobile}
 			>
 				<div
