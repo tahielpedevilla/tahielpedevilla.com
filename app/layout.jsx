@@ -1,17 +1,21 @@
-import { Space_Grotesk } from "next/font/google";
+import localFont from 'next/font/local'
+
 import "./globals.css";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+const montreal = localFont({
+  src: './PPNeueMontreal-Regular.otf',
+  display: 'swap',
+})
 
 export const metadata = {
 	title: "Tahiel Pedevilla",
 	description:
 		"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
 	openGraph: {
-		images: "/og-image.png",
+		images: "/og-image.jpg",
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -19,14 +23,14 @@ export const metadata = {
 		description:
 			"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
 		creator: "@tahielpedevilla",
-		images: ["https://tahielpedevilla.com/og-image.png"],
+		images: ["https://tahielpedevilla.com/og-image.jpg"],
 	},
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="antialiased scroll-smooth">
-			<body className={`${spaceGrotesk.className}`}>
+			<body className={`${montreal.className}`}>
 				<Navbar />
 				{children}
 				<Footer />
