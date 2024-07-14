@@ -40,24 +40,11 @@ export default function Navbar() {
 			})
 			.progress(1)
 
-		const changeHeaderColor = gsap.to(header, {
-			backgroundColor: "#0c0c0cba",
-			borderBottomColor: "#444444ba",
-			paused: true,
-			duration: 0.2,
-		})
-
 		ScrollTrigger.create({
 			start: "top top",
 			end: "max",
 			onUpdate: (self) => {
 				self.direction === -1 ? showAnim.play() : showAnim.reverse()
-
-				if (self.progress > 0.05) {
-					changeHeaderColor.play()
-				} else {
-					changeHeaderColor.reverse()
-				}
 			},
 		})
 	}, [])
@@ -65,13 +52,10 @@ export default function Navbar() {
 	return (
 		<header
 			ref={headerRef}
-			className="bg-transparent border-b border-b-transparent backdrop-blur-lg z-30 fixed top-0 w-full left-0 right-0 transition-colors duration-300"
+			className="bg-[#0c0c0cb1] border-b border-b-[#444444ba] z-30 fixed top-0 w-full left-0 right-0 transition-colors duration-300"
 		>
 			<div className="container px-6 py-6 flex flex-row items-center justify-between mx-auto">
-				<Link
-					href="/"
-					className="font-semibold"
-				>
+				<Link href="/" className="font-semibold">
 					Tahiel Pedevilla
 				</Link>
 				<nav className="hidden font-medium flex-row space-x-0 md:flex gap-8">
