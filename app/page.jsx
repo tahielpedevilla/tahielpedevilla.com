@@ -84,30 +84,28 @@ export default function Page() {
 			</section>
 			<section
 				id="about"
-				className="grid grid-cols-2 mx-auto container px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 scroll-mt-20"
+				className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 mx-auto container px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 scroll-mt-20"
 			>
 				<h2 className="font-semibold text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight mb-8 sm:mb-12">
 					About Me
 				</h2>
 				<div className="flex flex-col gap-6 sm:gap-8">
 					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						I&apos;m Tahiel, a {myAge}-year-old web developer based in Buenos
-						Aires, Argentina. My expertise lies in creating effective websites
-						that drive business growth and enhance online presence.
+						I&apos;m Tahiel, a {myAge}-year-old web developer from Villa María,
+						Argentina. I specialize in creating websites that help businesses
+						grow and improve their online presence.
 					</p>
 					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						With years of experience in web development, I&apos;ve refined my
-						skills to deliver websites that not only look impressive but also
-						perform exceptionally. I focus on building responsive, fast-loading,
-						and SEO-friendly sites that give your business a competitive edge in
-						the digital world.
+						With years of experience, I&apos;ve honed my skills to build
+						websites that look great and perform well. I focus on making sites
+						that are responsive, fast, and SEO-friendly to give your business an
+						edge online.
 					</p>
 					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						My passion is transforming your business objectives into a powerful
-						online platform. Whether you&apos;re aiming to boost conversions,
-						enhance user engagement, or modernize your digital footprint,
-						I&apos;m here to bring your vision to life using efficient code and
-						contemporary web technologies.
+						My passion is turning your business goals into a strong online
+						platform. Whether you want to increase conversions, engage users, or
+						update your digital presence, I&apos;m here to make your vision a
+						reality with efficient code and modern web technologies.
 					</p>
 				</div>
 			</section>
@@ -116,7 +114,6 @@ export default function Page() {
 				id="contact"
 				className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20"
 			>
-
 				<div className="flex flex-col mt-6 items-center py-40 text-lg">
 					<h2 className="text-3xl lg:text-6xl font-bold tracking-tight leading-normal">
 						Interested in working with me?
