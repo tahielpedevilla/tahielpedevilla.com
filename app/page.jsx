@@ -53,7 +53,7 @@ export default function Page() {
 		<main>
 			<section
 				id="home"
-				className="flex flex-col justify-center items-center py-40 relative"
+				className="flex flex-col justify-center items-center py-[25vh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6 z-10">
 					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-tight text-center">
@@ -65,7 +65,7 @@ export default function Page() {
 					</h2>
 					<a
 						href="https://cal.com/tahielpedevilla/15min"
-						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-lg text-[#0c0c0c] rounded-full hover:scale-105 ease-out duration-300"
+						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-lg text-[#0c0c0c] rounded-full hover:scale-105 ease duration-300"
 					>
 						Book Free Intro Call
 					</a>
@@ -123,7 +123,7 @@ export default function Page() {
 					</h2>
 					<a
 						href="https://cal.com/tahielpedevilla/15min"
-						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-lg text-[#0c0c0c] rounded-full hover:scale-105 ease-out duration-300"
+						className="mt-8 lg:mt-10 py-3 px-12 bg-[#fff] font-medium text-lg text-[#0c0c0c] rounded-full hover:scale-105 ease duration-300"
 					>
 						Book Free Intro Call
 					</a>
@@ -135,7 +135,7 @@ export default function Page() {
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								className="inline-block h-5 w-5 mb-0.5 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+								className="inline-block h-5 w-5 mb-0.5 shrink-0 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
 								aria-hidden="true"
 							>
 								<path

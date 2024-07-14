@@ -20,18 +20,18 @@ export default function MenuMobile({ navItems }) {
 	return (
 		<>
 			<button
-				className="w-8 h-8 rounded-full border border-[#404040] flex items-center md:hidden justify-center bg-transparent relative transition-colors ease-out"
+				className="w-8 h-8 rounded-full border border-[#404040] flex items-center md:hidden justify-center bg-transparent relative transition-colors ease"
 				onClick={toggleMenuMobile}
 			>
 				<div
 					className={`${
 						isMobileMenuOpen ? "rotate-45 scale-110" : "rotate-0 translate-y-[-3.5px]"
-					} w-[14px] h-[1.5px] bg-[#d3d3d3] absolute transition-transform duration-[.25s] ease-out`}
+					} w-[14px] h-[1.5px] bg-[#d3d3d3] absolute transition-transform duration-300 ease`}
 				/>
 				<div
 					className={`${
 						isMobileMenuOpen ? "-rotate-45 scale-110" : "rotate-0 translate-y-[3.5px]"
-					} w-[14px] h-[1.5px] bg-[#d3d3d3] absolute transition-transform duration-[.25s] ease-out`}
+					} w-[14px] h-[1.5px] bg-[#d3d3d3] absolute transition-transform duration-300 ease`}
 				/>
 			</button>
 			{isMobileMenuOpen && (

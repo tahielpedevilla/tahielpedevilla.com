@@ -19,7 +19,7 @@ export default function Project({ project }) {
 				src={desktopImage}
 				alt={title}
 				fill
-				className="absolute inset-0 w-full h-full hidden lg:block group-hover:scale-105 transition-transform duration-700 object-cover ease-out"
+				className="absolute inset-0 w-full h-full hidden lg:block group-hover:scale-105 transition-transform duration-700 object-cover ease"
 			/>
 			<header className="flex flex-col sm:flex-row w-full backdrop-blur-sm bg-[#ffffffa8] text-[#0c0c0c] rounded-[1rem] p-4 sm:max-w-fit relative z-10">
 				<h3 className="font-bold text-2xl tracking-tight">{title}</h3>

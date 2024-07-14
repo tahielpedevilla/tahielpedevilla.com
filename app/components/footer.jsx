@@ -16,7 +16,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="border-t border-t-[#0c0c0c13]">
+		<footer className="border-t border-t-[#444444ba]">
 			<div className="container mx-auto px-6 py-6 flex flex-col gap-4 lg:flex-row items-center justify-between">
 				<nav className="flex flex-row items-center font-semibold relative gap-6">
 					<Suspense fallback={null}>
