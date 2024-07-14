@@ -70,7 +70,7 @@ export default function Page() {
 						Book Free Intro Call
 					</a>
 				</div>
-				<div className="h-[80vh] w-[80vh] blur-[12rem] rounded-full bg-[#b4b4b431] absolute" />
+				<div className="h-[80vh] w-[80vh] blur-[12rem] rounded-full bg-[#b4b4b431] absolute max-w-[100%]" />
 			</section>
 			<section
 				id="work"
