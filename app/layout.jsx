@@ -15,7 +15,7 @@ export const metadata = {
 	description:
 		"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
 	openGraph: {
-		images: "/og-image.png",
+		images: "/og-image.jpg",
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -23,7 +23,7 @@ export const metadata = {
 		description:
 			"Tahiel Pedevilla is a Web Developer specializing in Frontend Development and Webflow Development",
 		creator: "@tahielpedevilla",
-		images: ["https://tahielpedevilla.com/og-image.png"],
+		images: ["https://tahielpedevilla.com/og-image.jpg"],
 	},
 };
 
