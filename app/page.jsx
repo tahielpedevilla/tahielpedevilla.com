@@ -29,8 +29,8 @@ const projects = [
 	{
 		title: "Marqui & Arw",
 		link: "https://marqui-arw-boda.vercel.app/",
-		mobileImage: "/latte-mobile.png",
-		desktopImage: "/latte.png",
+		mobileImage: "/marqui-arw.webp",
+		desktopImage: "/marqui-arw.webp",
 		client: "Freelance",
 		date: "December 2023",
 	},
@@ -53,7 +53,7 @@ export default function Page() {
 		<main>
 			<section
 				id="home"
-				className="flex flex-col justify-center items-center py-[25vh] relative"
+				className="flex flex-col justify-center items-center pt-[28vh] pb-[20vh] md:pt-[30vh] md:pb-[25vh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6 z-10">
 					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-tight text-center">
