@@ -2,6 +2,47 @@
 
 import { useState } from "react"
 
+const FAQ = () => {
+	const faqItems = [
+		{
+			question: "What types of websites can you build?",
+			answer:
+				"I can build various types of websites including business sites, online stores, portfolios, and custom web applications. I adapt my development to fit your specific needs and industry requirements.",
+		},
+		{
+			question: "How long does it take to build a website?",
+			answer:
+				"The time to build a website depends on its complexity. A basic website might take 1-2 weeks, while more complex ones can take 2-3 months or more. I can give you a more precise estimate after we discuss your specific needs.",
+		},
+		{
+			question: "Do you offer ongoing website support?",
+			answer:
+				"Yes, I provide ongoing support to keep your website running smoothly. This includes regular updates, security checks, and performance improvements. I can also help with content updates when needed.",
+		},
+		{
+			question: "What's your process for creating a website?",
+			answer:
+				"My process starts with understanding your needs, then planning the website structure. After that, I begin coding and development. Once the site is built, I thoroughly test it before launch. I keep you updated throughout the process to ensure the final website meets your expectations.",
+		},
+	]
+
+	return (
+		<section
+			id="faq"
+			className="mx-auto container px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24"
+		>
+			<h2 className="font-semibold text-center text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight">
+				Frequently Asked questions
+			</h2>
+			<div className="max-w-3xl mx-auto mt-8 lg:mt-12">
+				{faqItems.map((item, index) => (
+					<FAQItem key={index} question={item.question} answer={item.answer} />
+				))}
+			</div>
+		</section>
+	)
+}
+
 const FAQItem = ({ question, answer }) => {
 	const [isOpen, setIsOpen] = useState(false)
 
@@ -34,52 +75,6 @@ const FAQItem = ({ question, answer }) => {
 				</div>
 			)}
 		</div>
-	)
-}
-
-const FAQ = () => {
-	const faqItems = [
-		{
-			question: "What types of websites do you specialize in?",
-			answer:
-				"I specialize in creating a wide range of websites, including business websites, e-commerce platforms, portfolios, and custom web applications. My expertise allows me to tailor solutions to your specific needs and industry requirements.",
-		},
-		{
-			question: "How long does it typically take to complete a website?",
-			answer:
-				"The timeline for website completion varies depending on the complexity and scope of the project. A simple website might take 2-4 weeks, while more complex projects can take 2-3 months or more. I'll provide a more accurate estimate after discussing your specific requirements.",
-		},
-		{
-			question: "Do you offer website maintenance services?",
-			answer:
-				"Yes, I offer website maintenance services to ensure your site remains up-to-date, secure, and performs optimally. This can include regular updates, security checks, content updates, and performance optimizations.",
-		},
-		{
-			question: "Can you help improve my website's search engine rankings?",
-			answer:
-				"Absolutely. I implement SEO best practices during the development process, including optimizing site structure, improving page load speeds, and ensuring mobile responsiveness. While I'm not an SEO specialist, my development work lays a strong foundation for improved search engine performance.",
-		},
-		{
-			question: "What is your process for starting a new website project?",
-			answer:
-				"My process typically involves an initial consultation to understand your needs, followed by planning and wireframing. Once the design is approved, I move on to development, testing, and finally, launching your site. I maintain clear communication throughout to ensure the final product meets your expectations.",
-		},
-	]
-
-	return (
-		<section
-			id="faq"
-			className="mx-auto container px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24"
-		>
-			<h2 className="font-semibold text-center text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight">
-			Frequently Asked questions
-			</h2>
-			<div className="max-w-3xl mx-auto mt-8 lg:mt-12">
-				{faqItems.map((item, index) => (
-					<FAQItem key={index} question={item.question} answer={item.answer} />
-				))}
-			</div>
-		</section>
 	)
 }
 
