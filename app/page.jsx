@@ -113,7 +113,7 @@ export default function Page() {
 				id="contact"
 				className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20"
 			>
-				<div className="flex flex-col mt-6 items-center py-40 text-lg">
+				<div className="flex flex-col text-center mt-6 items-center py-40 text-lg">
 					<h2 className="text-3xl lg:text-6xl font-bold tracking-tight leading-normal">
 						Interested in working with me?
 					</h2>
@@ -124,7 +124,7 @@ export default function Page() {
 						Book Free Intro Call
 					</a>
 					<div className="text-lg mt-8 lg:mt-10">
-						<p className="inline">Or drop me an email at </p>
+						<p className="block md:inline">Or drop me an email at </p>
 						<a href="mailto:tahielpeed@gmail" className="group inline">
 							tahielpeed@gmail.com
 							<svg
