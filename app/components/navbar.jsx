@@ -28,7 +28,7 @@ const navItems = {
 
 export default function Navbar() {
 	return (
-		<header className="bg-[#0c0c0cb1] border-b border-b-[#444444ba] z-30 sticky top-0 w-full left-0 right-0 transition-colors duration-300">
+		<header className="bg-[#0c0c0cdb] border-b border-b-[#444444ba] z-30 sticky top-0 w-full left-0 right-0 transition-colors duration-300">
 			<div className="container px-6 py-6 flex flex-row items-center justify-between mx-auto">
 				<Link
 					href="/"
