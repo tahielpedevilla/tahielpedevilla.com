@@ -114,7 +114,7 @@ export default function Page() {
 				className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20"
 			>
 				<div className="flex flex-col text-center mt-6 items-center py-40 text-lg">
-					<h2 className="text-3xl lg:text-6xl font-bold tracking-tight leading-normal">
+					<h2 className="text-[7vw] lg:text-6xl font-bold tracking-tight leading-normal">
 						Interested in working with me?
 					</h2>
 					<a
