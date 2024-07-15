@@ -83,7 +83,7 @@ export default function Page() {
 			</section>
 			<section
 				id="about"
-				className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 mx-auto container px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 scroll-mt-20"
+				className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 mx-auto container px-4 py-12 md:py-20 lg:py-24 scroll-mt-20"
 			>
 				<h2 className="font-semibold text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight mb-8 sm:mb-12">
 					About Me
