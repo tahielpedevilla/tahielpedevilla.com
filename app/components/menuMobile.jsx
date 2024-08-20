@@ -38,7 +38,7 @@ export default function MenuMobile({ navItems }) {
 			</button>
 			{isMobileMenuOpen && (
 				<nav
-					className={`max-w-[100vw] fixed left-0 w-full mx-auto container px-6 py-6 right-0 bottom-0 top-[81px] flex-col h-[calc(100vh-81px)] font-medium md:hidden bg-[#0c0c0cdb]`}
+					className={`max-w-[100vw] fixed left-0 w-full mx-auto container px-6 py-6 right-0 bottom-0 top-[81px] flex-col h-[calc(100vh-81px)] font-medium md:hidden bg-[#0c0c0c]`}
 				>
 					<div className="relative flex flex-col gap-6">
 						<Suspense fallback={null}>
