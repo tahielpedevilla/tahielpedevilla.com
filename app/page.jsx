@@ -57,7 +57,7 @@ export default function Page() {
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6 z-10">
 					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-tight text-center">
-						Expert Web Development Services
+						Crafting High-Performance Websites for Growing Businesses
 					</h1>
 					<h2 className="font-medium max-w-lg text-base sm:text-lg md:text-xl lg:text-2xl mt-4 tracking-tight leading-tight text-center text-[#d0d0d0]">
 						I build robust, scalable websites that load fast, work smoothly, and
