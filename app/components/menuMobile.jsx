@@ -1,4 +1,4 @@
-import { forwardRef, Suspense, useEffect, useState } from "react"
+import { forwardRef, Suspense, useEffect, useState, useCallback } from "react"
 
 export default function MenuMobile({ navItems }) {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
