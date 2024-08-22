@@ -56,8 +56,8 @@ export default function Page() {
 				className="flex flex-col justify-center items-center py-[20svh] md:py-[25svh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6 z-10">
-					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-tight text-center">
-						Crafting High-Performance Websites for Growing Businesses
+					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight xl:leading-tight text-center">
+						Developing Websites for Growing Businesses
 					</h1>
 					<h2 className="font-medium max-w-lg text-base sm:text-lg md:text-xl lg:text-2xl mt-4 tracking-tight leading-tight text-center text-[#d0d0d0]">
 						I build robust, scalable websites that load fast, work smoothly, and
@@ -88,23 +88,24 @@ export default function Page() {
 				<h2 className="font-semibold text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight mb-8 sm:mb-12">
 					About Me
 				</h2>
-				<div className="flex flex-col gap-6 sm:gap-8">
-					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						I&apos;m Tahiel, a {myAge}-year-old web developer from Villa María,
-						Argentina. I specialize in creating websites that help businesses
-						grow and improve their online presence.
+				<div className="flex flex-col gap-6 sm:gap-8 text-base sm:text-lg lg:text-xl leading-snug">
+					<p className="max-w-prose">
+						Hello, I&aposm Tahiel, a {myAge}-year-old web developer based in
+						Villa María, Argentina. I&aposm passionate about creating websites
+						and digital experiences that help businesses thrive online.
 					</p>
-					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						With years of experience, I&apos;ve honed my skills to build
-						websites that look great and perform well. I focus on making sites
-						that are responsive, fast, and SEO-friendly to give your business an
-						edge online.
+					<p className="max-w-prose">
+						With years of experience under my belt, I&aposve honed my skills in
+						frontend development, UI/UX design, and Webflow. I specialize in
+						building responsive, fast, and SEO-optimized websites that not only
+						look great but also perform exceptionally well.
 					</p>
-					<p className="max-w-prose text-base sm:text-lg lg:text-xl">
-						My passion is turning your business goals into a strong online
-						platform. Whether you want to increase conversions, engage users, or
-						update your digital presence, I&apos;m here to make your vision a
-						reality with efficient code and modern web technologies.
+					<p className="max-w-prose">
+						My goal is to turn your business objectives into an impactful online
+						presence. Whether you need to boost conversions, enhance user
+						engagement, or revamp your digital brand, I&aposm here to bring your
+						vision to life using efficient code and cutting-edge web
+						technologies.
 					</p>
 				</div>
 			</section>
