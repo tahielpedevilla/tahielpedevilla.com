@@ -11,29 +11,29 @@ const montreal = localFont({
 })
 
 export const metadata = {
-	title: "Tahiel Pedevilla — Expert Web Developer based in Argentina",
+	title: "Tahiel Pedevilla — UI Developer Specializing in Frontend & Webflow",
 	description:
-		"Tahiel Pedevilla is an expert web developer specializing in frontend technologies and Webflow development. With a strong focus on creating intuitive and visually appealing user interfaces, Tahiel helps businesses and individuals craft exceptional digital experiences.",
+		"Tahiel Pedevilla is a UI developer focused on crafting fast, responsive, and visually engaging websites using frontend technologies and Webflow. Helping businesses elevate their digital presence with clean, user-friendly interfaces.",
 	openGraph: {
-		title: "Tahiel Pedevilla — Expert Web Developer based in Argentina",
+		title: "Tahiel Pedevilla — UI Developer Specializing in Frontend & Webflow",
 		description:
-			"Tahiel Pedevilla is an expert web developer specializing in frontend technologies and Webflow development. With a strong focus on creating intuitive and visually appealing user interfaces, Tahiel helps businesses and individuals craft exceptional digital experiences.",
+			"Tahiel Pedevilla is a UI developer focused on crafting fast, responsive, and visually engaging websites using frontend technologies and Webflow. Helping businesses elevate their digital presence with clean, user-friendly interfaces.",
 		url: "https://tahielpedevilla.com",
 		images: [
 			{
 				url: "https://tahielpedevilla.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Tahiel Pedevilla — Expert Web Developer",
+				alt: "Tahiel Pedevilla — UI Developer Specializing in Frontend & Webflow",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Tahiel Pedevilla — Expert Web Developer based in Argentina",
+		title: "Tahiel Pedevilla — UI Developer Specializing in Frontend & Webflow",
 		description:
-			"Tahiel Pedevilla is an expert web developer specializing in frontend technologies and Webflow development. With a strong focus on creating intuitive and visually appealing user interfaces, Tahiel helps businesses and individuals craft exceptional digital experiences.",
+			"Tahiel Pedevilla is a UI developer focused on crafting fast, responsive, and visually engaging websites using frontend technologies and Webflow. Helping businesses elevate their digital presence with clean, user-friendly interfaces.",
 		creator: "@tahielpedevilla",
 		images: ["https://tahielpedevilla.com/og-image.jpg"],
 	},
