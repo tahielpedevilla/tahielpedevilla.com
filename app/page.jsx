@@ -53,10 +53,10 @@ export default function Page() {
 		<main>
 			<section
 				id="home"
-				className="flex flex-col justify-center items-center py-[20svh] md:py-[25svh] relative"
+				className="flex flex-col justify-center items-center py-[20svh] md:py-[20svh] relative"
 			>
 				<div className="flex flex-col justify-center items-center mx-auto container px-6 z-10">
-					<h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight xl:leading-tight text-center">
+					<h1 className="font-bold text-3xl sm:text-4xl xl:text-6xl tracking-tight xl:leading-tight text-center">
 						Developing Websites for Growing Businesses
 					</h1>
 					<h2 className="font-medium max-w-lg text-base sm:text-lg md:text-xl lg:text-2xl mt-4 tracking-tight leading-tight text-center text-[#d0d0d0]">
@@ -85,26 +85,25 @@ export default function Page() {
 				id="about"
 				className="grid grid-cols-1 text-center md:text-left md:grid-cols-2 mx-auto container px-4 py-12 md:py-20 lg:py-24 scroll-mt-20"
 			>
-				<h2 className="font-semibold text-2xl sm:text-3xl lg:text-6xl tracking-tight leading-tight mb-8 sm:mb-12">
+				<h2 className="font-semibold text-2xl text-[7vw] lg:text-5xl tracking-tight leading-tight mb-8 sm:mb-12">
 					About Me
 				</h2>
 				<div className="flex flex-col gap-6 sm:gap-8 text-base sm:text-lg lg:text-xl leading-snug">
 					<p className="max-w-prose">
-						Hello, I&aposm Tahiel, a {myAge}-year-old web developer based in
-						Villa María, Argentina. I&aposm passionate about creating websites
-						and digital experiences that help businesses thrive online.
+						Hey! I&apos;m Tahiel, a web developer based in Argentina. I&apos;m
+						passionate about creating websites and digital experiences that help
+						businesses thrive online.
 					</p>
 					<p className="max-w-prose">
-						With years of experience under my belt, I&aposve honed my skills in
-						frontend development, UI/UX design, and Webflow. I specialize in
-						building responsive, fast, and SEO-optimized websites that not only
-						look great but also perform exceptionally well.
+						I specialize in building responsive, fast, and SEO-optimized
+						websites that not only look great but also perform exceptionally
+						well.
 					</p>
 					<p className="max-w-prose">
 						My goal is to turn your business objectives into an impactful online
 						presence. Whether you need to boost conversions, enhance user
-						engagement, or revamp your digital brand, I&aposm here to bring your
-						vision to life using efficient code and cutting-edge web
+						engagement, or revamp your digital brand, I&apos;m here to bring
+						your vision to life using efficient code and cutting-edge web
 						technologies.
 					</p>
 				</div>
@@ -115,7 +114,7 @@ export default function Page() {
 				className="flex flex-col mx-auto container px-6 py-6 scroll-mt-20"
 			>
 				<div className="flex flex-col text-center mt-6 items-center py-40 text-lg">
-					<h2 className="text-[7vw] lg:text-6xl font-bold tracking-tight leading-normal">
+					<h2 className="text-[7vw] lg:text-5xl font-bold tracking-tight leading-normal">
 						Interested in working with me?
 					</h2>
 					<a

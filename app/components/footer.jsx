@@ -1,17 +1,3 @@
-import { Suspense } from "react"
-
-const socialLinks = {
-	"https://www.linkedin.com/in/tahiel-pedevilla/": {
-		name: "LinkedIn",
-	},
-	"https://github.com/tahielpedevilla": {
-		name: "GitHub",
-	},
-	"https://twitter.com/tahielpedevilla": {
-		name: "X",
-	},
-}
-
 export default function Footer() {
 	const year = new Date().getFullYear()
 
@@ -21,7 +7,7 @@ export default function Footer() {
 				<div class="flex justify-center space-x-6 md:order-2">
 					<a
 						href="https://twitter.com/tahielpedevilla"
-						class="hover:text-[#d3d3d3]/80 text-[#d3d3d3]"
+						className="hover:opacity-80"
 					>
 						<span class="sr-only">X</span>
 						<svg
@@ -35,7 +21,7 @@ export default function Footer() {
 					</a>
 					<a
 						href="https://www.linkedin.com/in/tahiel-pedevilla"
-						class="hover:text-[#d3d3d3]/80 text-[#d3d3d3]"
+						className="hover:opacity-80"
 					>
 						<span class="sr-only">Linkedin</span>
 						<svg
